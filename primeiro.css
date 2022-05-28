@@ -1,0 +1,36 @@
+.botao {
+    background-color: #ff87f5;
+    border-radius: 5px;
+    height: 80px;
+}
+
+#idade {
+    color: aquamarine;
+}
+
+#form1 > input {
+    color: #ff87f5;
+}
+
+#form2 > input {
+    color: #ff87f5;
+}
+
+#form1 > .botao {
+    height: 50px;
+    background-color: blue;
+}
+
+#form2 > .botao {
+    height: 60px;
+    background-color: green;
+}
+
+.form1 .texto.titulo {
+    font-size: x-large;
+}
+
+.form2 .texto {
+    font-size: medium;
+}
+

@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.quadrado {
+    height: 80px;
+    width: 80px;
+}
+
+#vermelho {
+    background-color: red;
+    left: 0;
+    top: 0;
+}
+
+#verde {
+    background-color: green;
+    bottom: 0;
+    left: 0;
+}
+
+#azul {
+    background-color: blue;
+    right: 0;
+    bottom: 0;
+}
+
+#amarelo {
+    background-color: yellow;
+    top: 0;
+    right: 0;
+}
