@@ -1,0 +1,20 @@
+{
+  "name": "primeiro",
+  "version": "1.0.0",
+  "description": "primeiro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoMilitao/avanade-web.git"
+  },
+  "author": "Gustavo Militão",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoMilitao/avanade-web/issues"
+  },
+  "homepage": "https://github.com/GustavoMilitao/avanade-web#readme"
+}
