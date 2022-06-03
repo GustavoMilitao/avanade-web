@@ -38,6 +38,23 @@ function deletePokemon(req, res) {
     res.send(`pokemon de id ${pokemonId} foi removido com sucesso!`);
 }
 
+function updatePokemon(req, res) {
+    const pokemonId = req.params.id;
+    const pokemon = req.body;
+    const pokemonPesquisado = lista.find((pokemonNaLista) => pokemonNaLista.id == pokemonId);
+    if(!pokemonPesquisado){
+        res.send(`não existe um pokemón com o id ${pokemonId}`)
+    } else {
+        pokemonPesquisado.name = pokemon.name;
+        pokemonPesquisado.id = pokemon.id;
+        pokemonPesquisado.default = pokemon.default;
+        pokemonPesquisado.weight = pokemon.weight;
+        pokemonPesquisado.order = pokemon.order;
+        pokemonPesquisado.nicknames = pokemon.nicknames;
+        res.send(`pokemon de id ${pokemonId} alterado com sucesso!`);
+    }
+}
+
 // Implemente uma verificação de id na rota POST /pokemon para NÃO inserir se já existir um pokemón 
 // na lista (utilizar a função find para obter pelo id, pesquisar no google caso tenha dúvidas).
 
@@ -51,6 +68,7 @@ function deletePokemon(req, res) {
 app.get('/pokemon', getPokemon);
 app.get('/pokemon/:id', getPokemonById);
 app.post('/pokemon', criandoPokemon);
+app.put('/pokemon/:id', updatePokemon);
 app.delete('/pokemon/:id', deletePokemon);
 
 
